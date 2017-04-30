@@ -1,4 +1,4 @@
-/* globals describe */
+/* globals describe, it */
 
 const assert        = require('chai').assert;
 const ImgurStorage  = require('./index');
@@ -51,38 +51,38 @@ describe('Imgur Storage', function () {
             assert.equal(err.message, 'File is not of image type');
 
             done();
-        })
-    })
+        });
+    });
 
     it('should process multiple files', function (done) {
-        var form = new FormData()
-        var parser = upload.fields([
+        const form      = new FormData();
+        const parser    = upload.fields([
             { name: 'img1', maxCount: 1 },
             { name: 'img2', maxCount: 1 },
-        ])
+        ]);
 
-        form.append('img1', fs.createReadStream(path.resolve(__dirname, './files/img1.png')))
-        form.append('img2', fs.createReadStream(path.resolve(__dirname, './files/img2.jpg')))
+        form.append('img1', fs.createReadStream(path.resolve(__dirname, './files/img1.png')));
+        form.append('img2', fs.createReadStream(path.resolve(__dirname, './files/img2.jpg')));
 
         submitForm(parser, form, function (err, req) {
             assert.ifError(err);
 
             assert.deepEqual(req.body, {});
 
-            assert.equal(req.files['img1'][0].fieldname, 'img1')
-            assert.equal(req.files['img1'][0].originalname, 'img1.png')
+            assert.equal(req.files['img1'][0].fieldname, 'img1');
+            assert.equal(req.files['img1'][0].originalname, 'img1.png');
             assert.isDefined(req.files['img1'][0].data);
             assert.isString(req.files['img1'][0].data.link);
 
 
-            assert.equal(req.files['img2'][0].fieldname, 'img2')
-            assert.equal(req.files['img2'][0].originalname, 'img2.jpg')
+            assert.equal(req.files['img2'][0].fieldname, 'img2');
+            assert.equal(req.files['img2'][0].originalname, 'img2.jpg');
             assert.isDefined(req.files['img2'][0].data);
             assert.isString(req.files['img2'][0].data.link);
 
             done();
-        })
-    })
+        });
+    });
 });
 
 
