@@ -4,7 +4,9 @@
   "description": "Multer storage engine for imgur. Images upload through multer will directly upload to Imgur",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,8 @@
   "homepage": "https://github.com/boylove142/multer-storage-imgur#readme",
   "dependencies": {
     "concat-stream": "^1.6.0",
-    "imgur": "^0.2.1"
+    "imgur": "^0.2.1",
+    "snyk": "^1.33.0"
   },
   "devDependencies": {
     "mocha": "^3.3.0",
@@ -33,5 +36,6 @@
     "eslint": "^3.19.0",
     "eslint-config-sharecar": "^1.0.4",
     "form-data": "^2.1.4"
-  }
+  },
+  "snyk": true
 }
