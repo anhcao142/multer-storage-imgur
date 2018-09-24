@@ -23,7 +23,7 @@
   "homepage": "https://github.com/boylove142/multer-storage-imgur#readme",
   "dependencies": {
     "concat-stream": "^1.6.0",
-    "imgur": "github:trevorblades/node-imgur"
+    "imgur": "^0.3.1"
   },
   "devDependencies": {
     "mocha": "^3.3.0",
