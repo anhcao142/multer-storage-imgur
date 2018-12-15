@@ -1,6 +1,6 @@
 # multer-storage-imgur
 
-[![Build Status](https://travis-ci.com/trevorblades/multer-image-storage.svg?branch=master)](https://travis-ci.com/trevorblades/multer-image-storage)
+[![Build Status](https://travis-ci.com/trevorblades/multer-storage-imgur.svg?branch=master)](https://travis-ci.com/trevorblades/multer-storage-imgur)
 
 Multer storage engine that uploads images to Imgur
 
