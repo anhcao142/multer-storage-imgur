@@ -1,32 +1,33 @@
-# multer-storage-imgur
+# @trevorblades/multer-storage-imgur
 
 [![Build Status](https://travis-ci.com/trevorblades/multer-storage-imgur.svg?branch=master)](https://travis-ci.com/trevorblades/multer-storage-imgur)
 
-Multer storage engine that uploads images to Imgur
+Easily upload images to Imgur using [Multer](https://github.com/expressjs/multer)!
 
 ## Installation
 
 ```bash
-$ npm install --save multer-storage-imgur
+$ npm install --save @trevorblades/multer-storage-imgur
 ```
 
 ## Usage
 
 ```js
-const ImgurStorage = require('multer-storage-imgur');
+const ImgurStorage = require('@trevorblades/multer-storage-imgur');
 const multer = require('multer');
 
 const upload = multer({
   storage: ImgurStorage({
-    clientId: 'INPUT_YOUR_IMGUR_CLIENTID'
+    clientId: 'YOUR_IMGUR_CLIENT_ID'
   })
 });
 ```
 
+I would recommend storing your Imgur client ID in an environment variable and then load it using [dotenv](https://github.com/motdotla/dotenv) or something similar.
+
 After the file is uploaded to Imgur, the JSON reponse from Imgur will be appended to the file object like this:
 
 ```js
-\\ req
 {
   ...rest,
   file: {
