@@ -7,7 +7,7 @@ Easily upload images to Imgur using [Multer](https://github.com/expressjs/multer
 ## Installation
 
 ```bash
-$ npm install --save @trevorblades/multer-storage-imgur
+$ npm install @trevorblades/multer-storage-imgur
 ```
 
 ## Usage
