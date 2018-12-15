@@ -1,6 +1,6 @@
 {
   "name": "@trevorblades/multer-storage-imgur",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Multer storage engine that uploads images to Imgur",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "trevorblades/multer-storage-imgur",
