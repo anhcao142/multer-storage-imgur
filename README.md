@@ -4,7 +4,7 @@ multer-storage-imgur
 [![Dependency Status](https://david-dm.org/boylove142/multer-storage-imgur/status.svg)](https://david-dm.org/boylove142/multer-storage-imgur)
 [![DevDependency Status](https://david-dm.org/boylove142/multer-storage-imgur/dev-status.svg)](https://david-dm.org/boylove142/multer-storage-imgur?type=dev)
 
-This will store image upload using multer directly to Imgur
+This will upload using multer directly to Imgur
 
 ### Installation
 
@@ -16,9 +16,9 @@ $ npm install --save multer-storage-imgur
 
 ```
 const ImgurStorage = require('multer-storage-imgur');
-const multer       = require('multer');
+const multer = require('multer');
 
-const upload       = multer({
+const upload = multer({
   storage: ImgurStorage({ clientId: 'INPUT_YOUR_IMGUR_CLIENTID' })
 })
 ```
@@ -30,11 +30,11 @@ After the file is uploaded to Imgur, the reponse json from Imgur will be appende
 {
 ...
 file: {
-     fieldname: 'img',
-     originalname: 'img2.jpg',
-     encoding: '7bit',
-     mimetype: 'image/jpeg',
-     data: { 
+    fieldname: 'img',
+    originalname: 'img2.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    data: {
         id: 'LnMoaHr',
         title: null,
         description: null,
@@ -58,8 +58,9 @@ file: {
         in_gallery: false,
         deletehash: 'XBizK4Enq1n7Fze',
         name: '',
-        link: 'http://i.imgur.com/LnMoaHr.jpg' },
-     success: true,
-     status: 200}
+        link: 'http://i.imgur.com/LnMoaHr.jpg'
+    },
+    success: true,
+    status: 200}
 }
 ```

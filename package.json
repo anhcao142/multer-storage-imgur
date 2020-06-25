@@ -1,6 +1,6 @@
 {
   "name": "multer-storage-imgur",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Multer storage engine for imgur. Images upload through multer will directly upload to Imgur",
   "main": "index.js",
   "scripts": {
@@ -24,18 +24,18 @@
   },
   "homepage": "https://github.com/boylove142/multer-storage-imgur#readme",
   "dependencies": {
-    "concat-stream": "^1.6.0",
+    "concat-stream": "^1.6.2",
     "imgur": "^0.3.1",
     "snyk": "^1.33.0"
   },
   "devDependencies": {
-    "mocha": "^3.3.0",
-    "multer": "^1.3.0",
-    "on-finished": "^2.3.0",
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-sharecar": "^1.0.4",
-    "form-data": "^2.1.4"
+    "form-data": "^2.1.4",
+    "mocha": "^3.3.0",
+    "multer": "^1.3.0",
+    "on-finished": "^2.3.0"
   },
   "snyk": true
 }
