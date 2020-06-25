@@ -25,7 +25,7 @@
   "homepage": "https://github.com/boylove142/multer-storage-imgur#readme",
   "dependencies": {
     "concat-stream": "^1.6.0",
-    "imgur": "^0.2.1",
+    "imgur": "^0.3.1",
     "snyk": "^1.33.0"
   },
   "devDependencies": {
