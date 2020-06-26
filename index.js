@@ -28,4 +28,6 @@ function setupImgurStorage(opts = {}) {
     return { _handleFile, _removeFile };
 }
 
-module.exports = setupImgurStorage;
+module.exports = function (opts) {
+    return setupImgurStorage(opts);
+};

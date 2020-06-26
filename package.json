@@ -1,6 +1,6 @@
 {
   "name": "multer-storage-imgur",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Multer storage engine for imgur. Images upload through multer will directly upload to Imgur",
   "main": "index.js",
   "scripts": {
